@@ -28,7 +28,7 @@ const Input: React.FC<InputProps> = ({
     ? { 
         required: "Phone number is required", 
         minLength: { value: 10, message: "Enter 10 digits only" }, 
-        maxLength: { value: 10, message: "Enter 10 digits only" }, 
+        maxLength: { value: 10, message: "Enter 10 digits" }, 
         pattern: { value: /^\d{10}$/, message: "Only numbers allowed" } 
       }
     : { required };

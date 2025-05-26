@@ -1,5 +1,5 @@
 import React from 'react'
-import type { ButtonProps } from '../../utils/ButtonInterface';
+import type { ButtonProps } from '../../utils/Interfaces';
 
 
 const Button: React.FC<ButtonProps> = (props) => {

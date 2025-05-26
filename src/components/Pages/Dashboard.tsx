@@ -2,10 +2,11 @@ import React from "react";
 import { BiCog } from "react-icons/bi";
 import profile from "../../assets/profile.webp"
 
-interface DashboardProps {
-  user: object;
-}
+import type { RegisterFormData } from "../../utils/Interfaces"
 
+interface DashboardProps {
+  user: RegisterFormData;
+}
 const Dashboard: React.FC<DashboardProps> = ({ user }) => {
     const storedUser = localStorage.getItem("user");
     console.log(storedUser)

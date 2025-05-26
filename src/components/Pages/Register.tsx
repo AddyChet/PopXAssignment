@@ -5,8 +5,8 @@ import { Link } from "react-router";
 import { useForm } from "react-hook-form";
 import Input from "../ui/Input";
 import { useNavigate } from "react-router";
-import type { authProp } from "../../utils/ButtonInterface";
-import type { RegisterFormData } from "../../utils/ButtonInterface";
+import type { authProp } from "../../utils/Interfaces";
+import type { RegisterFormData } from "../../utils/Interfaces";
 
 const Register: React.FC<authProp> = ({ setUser }) =>{
     const navigate = useNavigate()

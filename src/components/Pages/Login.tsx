@@ -1,4 +1,3 @@
-import React from "react";
 import { BiX } from "react-icons/bi";
 import authImg from "../../assets/auth.png";
 import Button from "../ui/Button";
@@ -7,8 +6,8 @@ import { useForm } from "react-hook-form";
 import Input from "../ui/Input";
 import { defaultUser } from "../../utils/defaultUser";
 
-const Login= () => {
-  const navigate = useNavigate()
+const Login = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -16,7 +15,7 @@ const Login= () => {
   } = useForm();
 
   const onSubmit = () => {
-    navigate("/dashboard")
+    navigate("/dashboard");
     localStorage.setItem("user", JSON.stringify(defaultUser));
     // Handle form submission (API call, etc.)
   };
@@ -55,7 +54,7 @@ const Login= () => {
               type="text"
             />
 
-             <Input
+            <Input
               label="Password"
               name="password"
               errors={errors}
@@ -63,9 +62,8 @@ const Login= () => {
               placeholder="Enter your password"
               required="Required"
               type="password"
-              
             />
-             <Button
+            <Button
               text="Sign in"
               variant="primary"
               className="w-full py-2 px-2"
