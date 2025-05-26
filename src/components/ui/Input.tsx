@@ -26,7 +26,7 @@ const Input: React.FC<InputProps> = ({
     const validationRules =
     label === "Phone Number"
     ? { 
-        required: "Phone number is required", 
+        required, 
         minLength: { value: 10, message: "Enter 10 digits only" }, 
         maxLength: { value: 10, message: "Enter 10 digits" }, 
         pattern: { value: /^\d{10}$/, message: "Only numbers allowed" } 
